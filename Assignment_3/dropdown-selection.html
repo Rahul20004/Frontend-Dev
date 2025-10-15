@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dropdown Selection</title>
+</head>
+<body>
+    <!-- Dropdown-based selection page with pre-selected options -->
+    <header>
+        <h1>Location & Favorite Place Selection</h1>
+    </header>
+
+    <main>
+        <form>
+            <p>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country" title="Select country">
+                    <option value="india" selected>India</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="state">State:</label><br>
+                <select id="state" name="state" title="Select state">
+                    <option value="karnataka" selected>Karnataka</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="tamilnadu">Tamil Nadu</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="city">City:</label><br>
+                <select id="city" name="city" title="Select city">
+                    <option value="bengaluru" selected>Bengaluru</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="chennai">Chennai</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="place">Favorite Tourist Place:</label><br>
+                <select id="place" name="place" title="Select favorite tourist place">
+                    <option value="lalbagh" selected>Lalbagh Botanical Garden</option>
+                    <option value="eiffel">Eiffel Tower</option>
+                    <option value="taj">Taj Mahal</option>
+                </select>
+            </p>
+        </form>
+
+        <p>
+            Summary: I chose <strong>India</strong> → <strong>Karnataka</strong> → <strong>Bengaluru</strong> and my favorite tourist place is <strong>Lalbagh Botanical Garden</strong>.
+        </p>
+    </main>
+
+    <footer>
+        <p>© 2025 Selection Demo</p>
+    </footer>
+</body>
+</html>
