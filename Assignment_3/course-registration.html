@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Registration Form</title>
+</head>
+<body>
+    <!-- Course Registration Form (structure only) -->
+    <header>
+        <h1>Course Registration</h1>
+    </header>
+
+    <main>
+        <!-- Fieldset grouping personal info -->
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" title="Enter your full name">
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" title="Enter your email address">
+                </p>
+            </fieldset>
+
+            <!-- Fieldset grouping course selection -->
+            <fieldset>
+                <legend>Course Selection</legend>
+                <p>
+                    <label for="course">Choose a course:</label><br>
+                    <select id="course" name="course" title="Select the course you want to enroll in">
+                        <option value="ml">Machine Learning (selected)</option>
+                        <option value="web">Web Development</option>
+                        <option value="nlp">Natural Language Processing</option>
+                        <option value="cv">Computer Vision</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <!-- Note: No CSS/JS and no submit handling since HTML-only structure required -->
+        </form>
+
+        <!-- Table showing available schedules -->
+        <h2>Available Course Schedules</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Instructor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                    <td>Dr. A. Sharma</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>5:00 PM - 7:00 PM</td>
+                    <td>Ms. R. Gupta</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 1:00 PM</td>
+                    <td>Mr. S. Rao</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Contact admin@example.com for more timings.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <p>© 2025 Course Registration Office</p>
+    </footer>
+</body>
+</html>
