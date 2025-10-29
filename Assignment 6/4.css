@@ -1,0 +1,9 @@
+body{margin:0;font-family:sans-serif}
+.grid{display:grid;grid-template-columns:200px 1fr;grid-template-rows:auto 1fr;gap:10px;height:100vh;padding:10px}
+header{grid-column:1/3;background:#333;color:white;text-align:center;padding:10px}
+aside{background:#eee;padding:10px}
+main{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.box{background:white;display:flex;align-items:center;justify-content:center;border:1px solid #ddd;transition:.3s}
+.box:hover{transform:scale(1.05);box-shadow:0 0 10px rgba(0,0,0,.2)}
+.b{grid-column:span 2}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
