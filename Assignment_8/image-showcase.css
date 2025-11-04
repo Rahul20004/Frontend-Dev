@@ -1,0 +1,35 @@
+body {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+figure:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+
+figcaption {
+  text-align: center;
+  padding: 5px;
+  background: white;
+}
