@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fafafa;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Common Button Styles */
+button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+/* Button Variants */
+.primary {
+  background: dodgerblue;
+  color: white;
+}
+.primary:hover {
+  background: royalblue;
+}
+
+.secondary {
+  background: gray;
+  color: white;
+}
+.secondary:hover {
+  background: darkgray;
+}
+
+.outline {
+  background: transparent;
+  border: 2px solid dodgerblue;
+  color: dodgerblue;
+}
+.outline:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+/* Disabled Button */
+button:disabled {
+  background: #ddd;
+  color: #888;
+  cursor: not-allowed;
+}
+
+/* Focus Effect */
+button:focus {
+  outline: 2px solid black;
+}
