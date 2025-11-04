@@ -1,0 +1,10 @@
+body{font-family:sans-serif;margin:20px;}
+.cards{display:flex;gap:20px;flex-wrap:wrap;}
+.card{
+  flex:1 1 calc(25% - 20px);
+  background:#eee;padding:40px;text-align:center;
+  transition:background 0.3s;
+}
+.card:hover{background:#ccc;}
+@media(max-width:900px){.card{flex:1 1 calc(50% - 20px);}}
+@media(max-width:600px){.card{flex:1 1 100%;}}
