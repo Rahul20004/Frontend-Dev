@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* :hover Example */
+a {
+  background: lightblue;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  background: dodgerblue;
+  color: white;
+}
+
+/* :focus Example */
+input {
+  padding: 8px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+input:focus {
+  border-color: dodgerblue;
+  outline: none;
+}
+
+/* :active Example */
+button {
+  padding: 10px 20px;
+  background: lightgreen;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:active {
+  background: green;
+  color: white;
+}
+
+/* :nth-child Example */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li:nth-child(odd) {
+  background: #ddd;
+  padding: 5px;
+}
