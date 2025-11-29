@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Greeting Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background: #f4f4f4;
+    }
+    #greeting, #welcomeMsg {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+    button {
+      padding: 10px 16px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn1 { background: #007bff; color:#fff; }
+    .btn2 { background: #28a745; color:#fff; }
+  </style>
+</head>
+<body>
+
+  <div id="greeting">Welcome!</div>
+  <div id="welcomeMsg">We are glad to have you here.</div>
+
+  <button class="btn1" id="changeGreetingBtn">Change Greeting</button>
+  <button class="btn2" id="toggleMsgBtn">Toggle Welcome Message</button>
+
+  <script>
+    // -------- 1. Greeting based on time --------
+    function setGreeting() {
+      const hour = new Date().getHours();
+      const greeting = document.getElementById("greeting");
+
+      if (hour < 12) greeting.textContent = "Good Morning!";
+      else if (hour < 18) greeting.textContent = "Good Afternoon!";
+      else greeting.textContent = "Good Evening!";
+    }
+
+    window.onload = setGreeting;
+
+    // -------- 2. Change Greeting Button --------
+    document.getElementById("changeGreetingBtn").onclick = function () {
+      document.getElementById("greeting").textContent =
+        "Stay positive, work hard, and make it happen!";
+    };
+
+    // -------- 3. Toggle welcome message --------
+    document.getElementById("toggleMsgBtn").onclick = function () {
+      const msg = document.getElementById("welcomeMsg");
+      msg.style.display = (msg.style.display === "none") ? "block" : "none";
+    };
+
+    // -------- 4. Show alert when greeting is clicked --------
+    document.getElementById("greeting").onclick = function () {
+      alert("You clicked the greeting!");
+    };
+  </script>
+
+</body>
+</html>
